@@ -6,9 +6,10 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 #
 # Answer: 233168
-
+b = Time.now
 s = 0
 1000.times do |n|
   s += n if (n % 3 == 0 || n % 5 == 0)
 end
 puts s
+puts Time.now - b
